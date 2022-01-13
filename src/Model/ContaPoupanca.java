@@ -11,6 +11,10 @@ public class ContaPoupanca extends Conta{
     private TipoConta tipo;
     private Boolean rendeu;
 
+    public String getTipoConta(){
+        return this.tipo.name();
+    }
+
     @Override
     public void sacar(double valor) {
         if(this.getSaldo()<=0 || this.getSaldo()<valor){

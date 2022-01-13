@@ -23,9 +23,10 @@ public class main {
         c1.transferir(10.75,c2);
         c1.consultar();
         c2.consultar();
-        //consulta data no padrão americano 2018-07-22
+
         c2.rendimento30Dias();
         c2.rendimento30Dias();
         c2.consultar();
+        System.out.println(c2.getTipoConta());
     }
 }
